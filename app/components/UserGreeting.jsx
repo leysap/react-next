@@ -5,7 +5,6 @@ function UserGreeting() {
     const [username, setUsername] = useState(null);
 
     useEffect(() => {
-        // Obtiene el nombre del usuario del localStorage
         const storedUsername = localStorage.getItem('username');
         console.log("el nombre es:"+ storedUsername)
         if (storedUsername) {

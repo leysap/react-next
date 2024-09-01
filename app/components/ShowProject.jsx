@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import { listProject } from "@/app/utils/user"; // Asegúrate de que esta función esté correctamente definida
+import { listProject } from "@/app/utils/user"; 
 import { useEffect, useState } from "react";
 
 export default function ShowProject() {
   const [token, setToken] = useState(null);
   const [projectData, setProjectData] = useState([]);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true); // Añadir estado de carga
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -25,7 +25,7 @@ export default function ShowProject() {
         } catch (err) {
           setError(err.message);
         } finally {
-          setLoading(false); // Marcar carga como completada
+          setLoading(false); 
         }
       };
 

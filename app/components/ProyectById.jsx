@@ -1,4 +1,5 @@
 "use client";
+//PROYECTO POR SU ID Y ADEMAS PERMITE MODIFICARLO (CON PUT)
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { getProjectById, updateProject } from '@/app/utils/user'; 
